@@ -3,7 +3,7 @@ import json
 
 location = input("Where do you want the weather for? ")
 
-url = f'http://api.openweathermap.org/data/2.5/weather?q={location}&appid=af7824ae8c177c05cefaccff7bc6c572'
+url = f'http://api.openweathermap.org/data/2.5/weather?q={location}&appid=[API_ID]'
 
 response = urllib.request.urlopen(url)
 result = json.loads(response.read())
